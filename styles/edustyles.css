@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black theme */
+    color: white; /* White text */
+  }
+  
+  /* Parallax Background Effect with Lighter Image */
+  .bg-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    filter: brightness(1.2); /* Lighten the background image */
+  }
+  
+  /* Black overlay */
+  .bg-black {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black shadow */
+    position: absolute;
+    inset: 0;
+  }
+  
+  /* Top Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000;
+  }
+  
+  /* Name Card */
+  .name-card {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .name-card h1 {
+    font-size: 1.5rem;
+    color: #000; /* Black text for name card */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bfff; /* Change color on hover */
+  }
+  
+  /* Education Section Styling */
+  #education {
+    padding-top: 100px; /* Padding for space under fixed header */
+  }
+  
+  .education-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .education-item {
+    border-left: 2px solid #00bfff;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .education-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6px;
+    height: 12px;
+    width: 12px;
+    background-color: #00bfff;
+    border-radius: 50%;
+  }
+  
+  ul {
+    list-style: disc;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+  }
+  

@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000;
+}
+
+.name-card {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.name-card h1 {
+    font-size: 1.5rem;
+    color: #000; /* Black text for name card */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bfff; /* Change color on hover */
+}
+
+/* Skills Section */
+#skills {
+    padding-top: 120px; /* Padding for space under fixed navbar */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for card-like effect */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00bfff; /* Light blue accent on the left */
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.skill-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skill-item ul li {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 50px;
+}

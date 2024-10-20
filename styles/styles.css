@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black theme */
+    color: white; /* White text */
+  }
+  
+  /* Parallax Background Effect */
+  .parallax {
+    background-image: url('../PP1.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Letter by letter animation */
+  .name-animation .letter {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .name-animation .letter:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .name-animation .letter:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .name-animation .letter:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .name-animation .letter:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Adds a slight upward movement */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Return to normal position */
+    }
+  }
+  
+  /* Top Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000;
+  }
+  
+  /* Name Card */
+  .name-card {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .name-card h1 {
+    font-size: 1.5rem;
+    color: #000; /* Black text for name card */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bfff; /* Change color on hover */
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 60px 0;
+  }
+  
